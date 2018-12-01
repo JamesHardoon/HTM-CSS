@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>高度塌陷问题最终解决方案一</title>
+		<style type="text/css">
+			.box1{
+				border: 1px solid red;
+			}
+			.box2{
+				width: 100px;
+				height: 100px;
+				background-color: #cba;
+				/*若给box2设置浮动的话，就会导致box1高度塌陷，
+				其解决方法为：在父标签内添加一个空白的子标签， 
+				为其设置clear属性，使其清除兄弟元素浮动对其的影响
+				
+				高度塌陷常用解决方案之一，推荐使用，
+				但是，其副作用就是在HTML结构中添加了一个空白标签
+				 * */
+				float:left
+			}
+			.clear{
+				clear: both;
+				
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box1">
+			<div class="box2"></div>
+			<div class="clear"></div>
+		</div>
+	</body>
+</html>

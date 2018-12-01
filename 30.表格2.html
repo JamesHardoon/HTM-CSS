@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>30.表格2</title>
+		<style type="text/css">
+			table{
+				width: 600px;
+				margin: 0 auto;
+				/*border: 1px solid black;*/
+				/*
+				 * table和td之间有一个默认的距离
+				 * 通过border-spacing属性可以设置这个距离*/
+				/*border-spacing:0px ;*/
+				/*
+				 * border-collapse可以用来设置表格边框合并
+				 * 如果设置了边框合并，则border-spacing则自动失效
+				 * */
+				border-collapse: collapse;
+			}
+			td,th{
+				border: 1px solid black;
+			}
+			/*
+			 * 设置隔行变色
+			 * nth-child：在所有元素中排列
+			 * nth-of-type:在当前类型中排列
+			 * odd:奇数行
+			 * even：偶数行
+			 * */
+			tr:nth-child(odd){
+				/*设置背景颜色*/
+				background-color: #BBFFAA;
+			}
+			tr:hover{
+				background-color: #FF0;
+			}
+		</style>
+	</head>
+	<body>
+		<!--border="1px"  cellspacing="0" cellpadding="0" width="60%" align="center"-->
+		<table >
+			<tr >
+				<!--
+					可以用th标签来表示表头中的内容，
+					它的用法和td一样，不同的是，它会默认居中和加粗效果
+				-->
+				<th>学号</th>
+				<th>姓名</th>
+				<th>性别</th>
+				<th>年龄</th>
+				<th>住址</th>
+				<th >备注</th>
+			</tr>
+			<tr >
+				<td>1</td>
+				<td>安东尼</td>
+				<td>男</td>
+				<td>33</td>
+				<td>俄亥俄州</td>
+				<td>雷霆</td>
+			</tr>
+			<tr >
+				<td>2</td>
+				<td>詹姆斯</td>
+				<td>男</td>
+				<td>34</td>
+				<td>克利夫兰</td>
+				<td>骑士</td>
+			</tr>
+			<tr >
+				<td>3</td>
+				<td>韦德</td>
+				<td>男</td>
+				<td>35</td>
+				<td>迈阿密</td>
+				<td>热火</td>
+			</tr>
+			<tr >
+				<td>4</td>
+				<td>保罗</td>
+				<td>男</td>
+				<td>33</td>
+				<td>休斯顿</td>
+				<td>火箭</td>
+			</tr>
+			<tr >
+				<td>1</td>
+				<td>安东尼</td>
+				<td>男</td>
+				<td>33</td>
+				<td>俄亥俄州</td>
+				<td>雷霆</td>
+			</tr>
+			<tr >
+				<td>2</td>
+				<td>詹姆斯</td>
+				<td>男</td>
+				<td>34</td>
+				<td>克利夫兰</td>
+				<td>骑士</td>
+			</tr>
+			<tr >
+				<td>3</td>
+				<td>韦德</td>
+				<td>男</td>
+				<td>35</td>
+				<td>迈阿密</td>
+				<td>热火</td>
+			</tr>
+			<tr >
+				<td>4</td>
+				<td>保罗</td>
+				<td>男</td>
+				<td>33</td>
+				<td>休斯顿</td>
+				<td>火箭</td>
+			</tr>
+			<tr >
+				<td>1</td>
+				<td>安东尼</td>
+				<td>男</td>
+				<td>33</td>
+				<td>俄亥俄州</td>
+				<td>雷霆</td>
+			</tr>
+			<tr >
+				<td>2</td>
+				<td>詹姆斯</td>
+				<td>男</td>
+				<td>34</td>
+				<td>克利夫兰</td>
+				<td>骑士</td>
+			</tr>
+			<tr >
+				<td>3</td>
+				<td>韦德</td>
+				<td>男</td>
+				<td>35</td>
+				<td>迈阿密</td>
+				<td>热火</td>
+			</tr>
+			<tr >
+				<td>4</td>
+				<td>保罗</td>
+				<td>男</td>
+				<td>33</td>
+				<td>休斯顿</td>
+				<td>火箭</td>
+			</tr>
+		</table>
+	</body>
+</html>

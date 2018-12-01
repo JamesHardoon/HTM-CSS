@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>27.图片整合技术（CSS-Sprite）</title>
+		<style type="text/css">
+			
+			/*
+			 * 图片整合技术（CSS-Sprite）
+			 * 优点：
+			 * 1.将多个图片整合为一张图片里，浏览器只需要发送一次请求，可以同时加载多个图片，
+			 * 提高了访问效率，提高了用户体验
+			 * 2.将多个图片整合为一张图片，减小了图片的总大小，提高了请求的额速度，增加了用户体验
+			 * 
+			 * */
+			
+			
+			/*
+			 *background的简写属性
+			 * 	-通过该属性可以同时设置所有背景相关的样式
+			 * 	-没有顺序的要求，谁在前谁在后都行
+			 * 	-也没有数量的要求，不写的样式就使用默认值 
+			 * 
+			 * background-color: #BBFFAA;
+			 * background-image: url(img/1.jpg);
+			 * background-repeat: no-repeat;
+			 * background-position: center center;
+			 * background-attachment: fixed;
+			 * 
+			 * 可以简写为：
+			 * background：#BBFFAA url(img/1.jpg) no-repeat center center fixed；
+			 * */
+			
+			.box{
+				background-color: #BBFFAA;
+				background-image: url(img/1.jpg);
+				background-repeat: no-repeat;
+				background-position: center center;
+				background-attachment: fixed;
+			}
+			
+			
+		</style>
+	</head>
+	<body>
+		<div class="box"></div>
+	</body>
+</html>
